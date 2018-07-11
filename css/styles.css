@@ -15,125 +15,100 @@ body {
   margin: 0 auto;
 }
 
-header, nav {
+#header {
   background-color: #FFD501;
 }
 
 #status-bar {
-  width: 100%;
   opacity: 0.3;
-}
-
-#back {
-  width: 10%;
-  float: left;
-  padding: 10px;
-  margin-right: 0%;
-}
-
-#header-text {
-  width: 75%;
-  text-align: center;
-  padding: 10px;
-  font-size: 1.4em;
-  vertical-align: middle;
 }
 
 #back, #header-text, #next, #recent {
   display: inline-block;
 }
 
+#back {
+  width: 15%;
+  float: left;
+  padding: 10px;
+}
+
+#header-text {
+  width: 85%;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
 #nav-bar {
-  width: 100%;
+  margin-top: 8%;
 }
 
 #next, #recent {
-  margin: 20px auto 0px -35px;
-  width: 45%;
-  padding: 0px 0px 10px 0px;
+  width: 48%;
+  padding-bottom: 10px;
   text-align: center;
+  margin: 0 auto;
 }
 
 #next {
   border-bottom: 2px solid black;
-  margin-right: 12%;
 }
 
 .bus {
   display: block;
-  margin: 10px 0px;
-  padding: 0px 10px;
-  height: 8%;
+  width: 100%;
+  margin: 2% 0%;
+  padding: 1% 2%;
 }
 
-#bus1 {
-  padding-top: 5px;
+.next-bus {
   background-color: #C6FFB2;
-}
-
-.reroute, .out-of-service {
-  height: 6%;
-}
-
-.alerts-img {
-  width: 10%;
 }
 
 .line {
   width: 13%;
   font-weight: bold;
   font-size: 1.2em;
-  float: left;
-  padding: 10px 0px;
   text-align: center;
 }
 
 .route-info {
   width: 47%;
   margin-left: 2%;
+  line-height: 1.2em;
 }
 
-.stops {
+.alerts-img {
+  width: 10%;
+}
+
+.time-info, .reroute-info  {
+  width: 25%;
+  line-height: 1.2em;
+}
+
+.stops, .alerts-img  {
   width: 7%;
   padding-left: 10px;
 }
 
-.destination, .direction, .time, .freq {
-  display: block;
-  line-height: 1.3em;
-}
-
-.line, .route-info, .time-info, .reroute-info, .stops {
-  display: inline-block;
-  vertical-align: middle;
+.alerts-img {
+  padding-left: 0px;
 }
 
 .direction, .freq, .reroute-info {
   font-size: 0.8em;
 }
 
-.time-info {
-  width: 25%;
-}
-
-#alerts-section .route-info {
-  width: 47%;
-}
-
-#alerts-section .reroute-info {
-  width: 20%;
-  line-height: 1.2em;
-}
-
-.alerts-img {
-  margin-left: 5%;
+.line, .route-info, .time-info, .reroute-info, .stops, .alerts-img {
+  display: inline-block;
   vertical-align: middle;
 }
 
-div.reroute .line, div.reroute .route-info, div.reroute .reroute-info {
-  padding: 0px;
+.reroute {
+  background-color: #FFD0B1;
 }
 
-.reroute .line, .out-of-service .line {
-  color: red;
+.out-of-service {
+  background-color: #FFD8D8;
 }
