@@ -78,8 +78,8 @@ body {
   line-height: 1.2em;
 }
 
-.alerts-img {
-  width: 10%;
+.destination, .direction, .time, .freq {
+  display: block;
 }
 
 .time-info, .reroute-info  {
